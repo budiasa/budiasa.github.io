@@ -534,7 +534,7 @@ small.text-muted {
 }
 
 .course {
-  max-width: 700px;
+  max-width: 765px;
   margin: 0 auto;
 }
 
@@ -550,7 +550,7 @@ small.text-muted {
 .course p {
   font-weight: 300;
   color: #777;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 @media (max-width: 767px) {
@@ -607,17 +607,32 @@ small.text-muted {
 }
 
 .bg-surfing {
-  background: url("assets/images/course-surfing.jpg") no-repeat center center;
+  background: url("https://ripcurlschoolofsurf.com/wp-content/uploads/IMG_3253-web-copy.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.bg-kitesurfing {
+  background: url("https://ripcurlschoolofsurf.com/wp-content/uploads/2017/02/kite_surfing-1.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.bg-wakeboarding {
+  background: url("https://ripcurlschoolofsurf.com/wp-content/uploads/2017/02/wake_boarding-level-2.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.bg-windsurfing {
+  background: url("https://ripcurlschoolofsurf.com/wp-content/uploads/2017/02/wind-level_4.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .bg-sup {
-  background: url("assets/images/course-sup.jpg") no-repeat center center;
+  background: url("https://ripcurlschoolofsurf.com/wp-content/uploads/2017/02/level_3_sup-1.jpg") no-repeat center center;
   background-size: cover;
 }
 
-.bg-bodyboard {
-  background: url("assets/images/course-bodyboard.jpg") no-repeat center center;
+.bg-diving {
+  background: url("https://blueoasisdive.com/wp-content/uploads/2018/09/Peak-Performance-Buoyancy-Specialty-1024x683-450x300.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -962,7 +977,7 @@ a:hover {
 }
 
 .active {
-  color: #b3241d;
+  color: black;
 }
 
 .left-menu ul {
@@ -1006,6 +1021,7 @@ a:hover {
 
 #header #logo {
   float: left;
+  margin-top:-15px;
 }
 
 #header #logo h1 {
@@ -1286,3 +1302,174 @@ body.mobile-nav-active #mobile-nav {
 body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
+
+.flexslider {
+  border:none;
+}
+/* move flex control inside picture */
+.flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    z-index: 99;
+}
+
+/* add black circle on icon */
+.flex-direction-nav a {
+  background-color: #000;
+  border-radius: 50%;
+  text-align: center;
+}
+
+/* change left arrow icon */
+/* cek here for font-awesome content list */
+.flex-direction-nav a::before {
+    font-family: "fontawesome";
+    font-size: 20px;
+    display: inline-block;
+    content: '\f060';
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+    line-height: 40px;
+}
+
+.flex-direction-nav a::before {
+    font-family: "fontawesome";
+    font-size: 20px;
+    display: inline-block;
+    content: '\f060';
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+    line-height: 40px;
+}
+
+/* next-icon */
+.flex-direction-nav a.flex-next::before {
+    content: '\f061';
+}
+
+
+/* always show direction icon */
+/* delete right/left and opacity if you want to auto hide icons */
+.flex-direction-nav .flex-next {
+    text-align: center;
+    right:10px;
+    opacity:1;
+}
+.flexslider:hover .flex-direction-nav .flex-next  {
+    opacity: 1;
+    right: 10px;
+}
+
+.flex-direction-nav .flex-prev {
+    text-align: center;
+    left:10px;
+    opacity:1;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev  {
+    opacity: 1;
+    left: 10px;
+}
+
+/* bullet color */
+.flex-control-paging li a {
+  background:rgba(0,0,0,0.8);
+  border:0.5px solid rgba(255,255,255,0.5);
+}
+
+.flex-control-paging li a.flex-active {
+  background:#fff;
+}
+
+.button {
+  bottom:40px;;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+.btn-danger {
+  background:#b3241d;
+}
+
+img.image_full{
+   display:block;
+  }
+
+ img.image_mobile{
+  display:none!important;
+ }
+
+@media (max-width: 640px){
+  img.image_full {
+   display:none!important;
+  }
+
+  img.image_mobile {
+   display:block!important;
+  }
+}
+
+.featured {
+  display: inline;
+}
+
+.actives {
+  color:#b3241d;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+
+}
+
+.bg-gray {
+  background-color: #eaeaea;
+}
+
+span {
+  display: block;
+}
+
+.post-thumb {
+  position:relative;
+}
+
+.post-date {
+  position:absolute;
+  left:0;
+  bottom:0;
+  padding: 10px;
+  background-color:white;
+  font-weight:bold;
+}
+
+.post-title {
+  font-size:1.2em;
+  font-weight:bold;
+}
+
+.post-excerpt {
+  line-height:1.7em;
+  font-size:14px;
+}
+
+.google-maps {
+        position: relative;
+        padding-bottom: 30%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+.google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
